@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { api } from "../services/api";
 import { Button } from "./Button";
+import '../styles/sidebar.scss'
 
 interface GenreResponseProps {
   id: number;
@@ -23,7 +24,6 @@ export function SideBar({ handleClickButton, selectedGenreId }: SideBarProps) {
   }, []);
 
   return (
-
     <nav className="sidebar">
       <span>Watch<p>Me</p></span>
 
